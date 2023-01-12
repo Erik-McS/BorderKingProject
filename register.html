@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Student name: Erik McSeveney-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- meta viewport is for resizing webpage on mobiles-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Importing Bootstrap-->
+     <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
+
+    <!--Icons library called Font Awesome 5-->
+    <script src="https://kit.fontawesome.com/9edb04f5e9.js" crossorigin="anonymous"></script>
+
+    <!--Importing Lato fonts from Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+
+    <!--Linking the CSS file-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Register to Border King</title>
+</head>
+
+<body class="bodyBBK">
+
+    <div class="textWhite boldText">
+        <br><br>
+        <p>Please enter the following information to register with Border Bike King</p>
+        <br>
+    </div>
+    <!--This is the registration form
+        it will use the POST method after the onsubmit validation is completed
+    -->
+    <div class="container textWhite">
+    <!-- on submit, the validation function will be called to validate the data entered-->
+    <form action="php/register.php" method="post" onsubmit="registrationFormValidation();return false">
+        <!-- tags for text fileds, adding an onchnage event handler
+            the text field border color will change when text is entered
+        -->
+        <!--Firstname text field-->
+        <label for="lb_firstname" id="lb_firstname"><b>First name</b></label><br>
+        <input type="text" name="firstname" id="firstname" onchange="fieldBorder('firstname')"><br>
+        <!--Last name text field-->
+        <label for="lb_lastname" id="lb_lastname"><b>Last name</b></label><br>
+        <input type="text" name="lastname" id="lastname" onchange="fieldBorder('lastname')"><br>
+        <!--email text field-->
+        <label for="lb_email" id="lb_email"><b>Email</b></label><br>
+        <input type="email" name="email" id="email" required onchange="fieldBorder('email')"><br>
+        <!--Passowrd text field-->
+        <label for="lb_password" id="lb_password"><b>Password</b></label><br>
+        <input type="password" name="password" id="password" onchange="fieldBorder('password')"><br><br>
+        <!--Submit button-->
+        <input type="submit" name="Rsubmit" id="Rsubmit" value="Register">
+
+    </form>
+    </div>
+    
+
+    <script src="scripts.js"></script>
+    <script src="registerScript.js"></script> 
+</body>
+</html>
