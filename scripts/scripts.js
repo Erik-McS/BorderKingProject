@@ -109,17 +109,17 @@ function addButtons(){
     var docfrag=document.createDocumentFragment();
 
     // array to store the buttons names
-    let names=["Our Shop","Contact Us","Register"];
+    let names=["Our Shop","Our Services","Contact Us","Register"];
     // array to store the corresponding ID
-    let ids=["shopButton","contactButton","registerButton"];
+    let ids=["shopButton","servicesButton","contactButton","registerButton"];
     // array to store the function calling the corresponding page
-    let page=["loadPage('shop')","loadPage('contact')","loadPage('register')"];
+    let page=["loadPage('shop')","loadPage('services')","loadPage('contact')","loadPage('register')"];
 
     // loop to create the 3 buttons.
     // each buttons will be given attributes saved in the arrays.
     // buttons will be added to the doc fragment
 
-    for(var i=0;i<3;i++){
+    for(var i=0;i<4;i++){
         // creating a button
         var bttn=document.createElement('button');
         // assigning text to the button
