@@ -1,3 +1,3 @@
 <?php
 // hello.php
-echo 'Hello, world!';
+echo 'You are logged';
