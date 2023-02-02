@@ -1,13 +1,5 @@
 <?php
-
-// Script to handle account session
-// Student: Erik McSeveney
-// Assessment 2 part 3, outcome 4
-
 session_start();
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -37,15 +29,18 @@ session_start();
     <title>Profile Border King</title>
 </head>
 
-<body class="bodyBBK textGreen">
+<body class="textGreen">
 
 <?php
 // php script for adding html code
-// if session exists, do the following
+// if session exists, do the following  
 if($_SESSION['id']){?>
 <h1 class="textGreen">Welcome <?php echo $_SESSION['firstname']?></h1>   
+<script>
+    window.location.reload();
+</script>
 
-<?php}
+<?php }
 // else
 else header("location: ../index.html")
 ?>

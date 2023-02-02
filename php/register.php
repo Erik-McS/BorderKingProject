@@ -19,7 +19,7 @@ if ($com->connect_error) {
 die("Connection to database failed: " . $conn->connect_error);
 }
 // connection ok, printintg confirmation
-echo "Connected to the database";
+// echo "Connected to the database";
 
 // getting the form details
 // first we check if the form was submitted
