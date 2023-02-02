@@ -54,10 +54,10 @@ if(isset($_POST['submit'])){
         }
         if($_SESSION['id']){
             // if logged in, we redirect to the user page
-            header("Location: useraccount.php")
+            header("Location: useraccount.php");
         }
         else{
-            echo"User not found"
+            echo"User not found";
         }
     }
 }
