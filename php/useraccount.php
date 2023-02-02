@@ -1,6 +1,17 @@
+<?php
+
+// Script to handle account session
+// Student: Erik McSeveney
+// Assessment 2 part 3, outcome 4
+
+session_start();
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-<!--Student name: Erik McSeveney-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,25 +34,22 @@
     <!--Linking the CSS file-->
     <link rel="stylesheet" href="../style/style.css">
 
-    <title>Login Border King</title>
+    <title>Profile Border King</title>
 </head>
 
-<body>
+<body class="bodyBBK textGreen">
 
-    <!--Login form, point to /php/login.php script-->
-    <div class="container">
-        <form action="../php/login.php" method="post";>
-            <label for="email" style="font-size: 10px;"><b>Email</b></label><br>
-            <input type="email" name="email" id="email" required onchange="fieldBorder('email')"><br>
-            <label for="password" style="font-size: 10px;"><b>Password</b></label><br>
-            <input type="password" name="password" id="password" required onchange="fieldBorder('password')"><br><br>
-            <input type="submit" name="submit" id="submit" value="Login" style="font-size:15px ;" class="loginButton">
-    
-        </form>
-        </div>
+<?php
+// php script for adding html code
+// if session exists, do the following
+if($_SESSION['id']){?>
+<h1 class="textGreen">Welcome <?php echo $_SESSION['firstname']?></h1>   
 
+<?php}
+// else
+else header("location: ../index.html")
+?>
 
-    
 
     <script src="../scripts/scripts.js"></script>    
 </body>

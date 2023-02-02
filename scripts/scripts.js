@@ -52,6 +52,27 @@ function clearContent(elementID){
     document.getElementById(elementID).innerHTML="";
 }
 
+function loadPHPPage(text){
+    // clear any date in main area
+    clearContent('mainText');
+    // we store the display area in a zone variable
+    var zone=document.getElementById('mainText');
+    // we need to create an object to store the webpage
+    var page=document.createElement('object');
+    // we set the object type to text/HRML
+    page.type="text/html";
+    // the st variable will store the name of the page to load. the first part
+    // being passed to the function as parameter
+    var st="../php/"+text+".php";
+    // we store the webpage in the object with its data attribute.
+    page.data=st;
+    // setting the size of the display zone
+    page.width=1000;
+    //page.height=850;
+    // displaying the webpage in the zone
+    zone.appendChild(page);
+}
+
 // the function will change the border color of a field when it changed
 function fieldBorder(fieldID){
     // we select the textfield
