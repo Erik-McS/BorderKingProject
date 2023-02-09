@@ -1,6 +1,7 @@
 <?php
     ini_set('display_errors',0);
     session_start();
+    // header("refresh: 3")
 ?>
 
 
@@ -67,7 +68,13 @@ else {?>
         <!--
         <iframe src="pages/login.html" frameborder="0"></iframe>
         -->
-        <object type="text/html" data="pages/login.html" height="517" style="overflow:auto">
+        <?php
+            if(!$_SESSION['id']){?>
+                <object type="text/html" data="pages/login.html" height="517" style="overflow:auto">
+            <?php }
+            else {?>
+            <object type="text/html" data="php/useraccount.php" height="517" style="overflow:auto">
+            <?php } ?>
     </object>
         </div>
     </div>

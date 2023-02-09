@@ -54,7 +54,7 @@ if(isset($_POST['submit'])){
         }
         if($_SESSION['id']){
             // if logged in, we redirect to the user page
-            header("Location: useraccount.php");
+            header("refresh:0; url=useraccount.php");
         }
         else{
             echo"User not found";

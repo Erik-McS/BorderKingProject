@@ -36,15 +36,14 @@ session_start();
 // if session exists, do the following  
 if($_SESSION['id']){?>
 <h1 class="textGreen">Welcome <?php echo $_SESSION['firstname']?></h1>   
-<script>
-    window.location.reload();
-</script>
+
+<br><br>
+<a href="logout.php">Logout</a>
 
 <?php }
 // else
-else header("location: ../index.html")
+else header("location: ../index.html");
 ?>
-
 
     <script src="../scripts/scripts.js"></script>    
 </body>

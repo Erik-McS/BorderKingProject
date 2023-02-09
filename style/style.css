@@ -85,7 +85,14 @@ body{
     margin: 40px;
     border: none;
 }
-
+.LogoutButton{
+    background-color: #228d02;
+    color: white;
+    padding: 10px;
+    width: 120px;
+    margin: 40px;
+    border: none;
+}
 .shopButton{    
     background-color: #228d02;
     color: white;
