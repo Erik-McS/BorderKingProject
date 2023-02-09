@@ -31,11 +31,11 @@
     <div class="container textWhite">
         <p>Please enter the old and new password below and submit to change your password</p>
         <br><br>
-        <form action="#" method="#">
+        <form action="../php/resetPassword.php" method="post">
             <label for="oldPassword"><b>Old password</b></label><br>
-            <input type="text" name="oldPassword" id="oldPassword" required onchange="fieldBorder('oldPassword')"><br>
+            <input type="password" name="oldPassword" id="oldPassword" required onchange="fieldBorder('oldPassword')"><br>
             <label for="newPassword"><b>New Password</b></label><br>
-            <input type="text" name="newPassword" id="newPassword" required onchange="fieldBorder('newPassword')"><br>
+            <input type="password" name="newPassword" id="newPassword" required onchange="fieldBorder('newPassword')"><br>
             <br><br>
             <input type="submit" name="submit" id="submit" value="Submit">
     
