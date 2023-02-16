@@ -44,7 +44,7 @@ if($_SESSION['id']){?>
 // else
 else header("location: ../index.html");
 ?>
-
+<script>window.location.reload()</script>
     <script src="../scripts/scripts.js"></script>    
 </body>
 </html>
