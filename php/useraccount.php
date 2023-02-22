@@ -29,7 +29,7 @@ session_start();
     <title>Profile Border King</title>
 </head>
 
-<body class="textGreen">
+<body class="textGreen" onload="addLoggedButtons()">
 
 <?php
 // php script for adding html code
@@ -39,12 +39,12 @@ if($_SESSION['id']){?>
 
 <br><br>
 <a href="logout.php">Logout</a>
-
-<?php }
+<?php
+}
 // else
 else header("location: ../index.html");
 ?>
-<script>window.location.reload()</script>
-    <script src="../scripts/scripts.js"></script>    
+
+<script src="../scripts/scripts.js"></script>    
 </body>
 </html>
