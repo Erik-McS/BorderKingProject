@@ -12,6 +12,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV=”refresh” CONTENT=”3″>
     <!--Importing Bootstrap-->
      <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -136,14 +137,13 @@ else {?>
                     Donec hendrerit risus quis pellentesque pretium. 
                     </p>
                 </p>
-            
         </div>
         <!--
             last colum is a persistent image
         -->
         <div class="mh-100 col-md-3 flex-fill d-flex h-100">
             <img src="images/bike_pic2a.jpg" alt="Biking image" class="BikingImage">
-            
+           
         </div>
     </div>
 
