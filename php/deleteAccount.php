@@ -18,7 +18,7 @@ else{
     // get the userID
     $userID=$_SESSION['id'];
     // Get the username
-    $userFirstName=$_SESSION['username'];
+    $userFirstName=$_SESSION['firstname'];
 
     // database details
     $host="localhost";
@@ -45,7 +45,7 @@ else{
         // clean echoed
         ob_clean();
         echo"You have sucessfully deleted your account <br><br>";
-        $link_address="../account.php";
+        $link_address="../index.html";
         echo"<a href='$link_address'>Back</a>";
     }
     else{
@@ -54,8 +54,4 @@ else{
     $com->close();
 
 }
-
-
-
-
 ?>
